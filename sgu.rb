@@ -1,7 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
-        
-        
+
 url = 'http://www.theskepticsguide.org/archive/podcast.aspx?mid=1'
 doc = Nokogiri::HTML(open(url))
 
