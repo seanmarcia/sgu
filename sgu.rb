@@ -10,7 +10,7 @@ sgu_mp3s.each do |link|
   xpathhref = link['href']
   sgu_episode = File.basename(xpathhref)
   if File.exists?(sgu_episode)
-    puts "Skipping download of #{sgu_episode}, it already exists!"
+    puts "Skipping the download of #{sgu_episode}, it already exists!"
   else
     puts "Downloading: #{sgu_episode}"
     open(xpathhref) do |save|
