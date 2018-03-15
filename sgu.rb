@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-url = 'http://www.theskepticsguide.org/archive/podcast.aspx?mid=1'
+url = 'https://www.theskepticsguide.org/podcast/sgu'
 doc = Nokogiri::HTML(open(url))
 
 sgu_mp3s = doc.xpath("//a").select {|link| link['href'] =~ /\.mp3$/ }
